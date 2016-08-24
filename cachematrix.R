@@ -9,6 +9,13 @@ makeCacheMatrix <- function(x = matrix()) {
                 x <<- y
                 inv <<- NULL
         }
+        #Initiate check: Checking matrix is square matrix or not. If it is not a square matrix, the program will stop. 
+        chk.matrix <- dim(x)
+        if(chk.matrix[1] != chk.matrix[2]){
+                stop("This is not a square matix. Input must be a square matrix. This message is approved by Dhairya Mistry :)")
+        }
+        return()
+        #stop square matrix check
         get <- function() x
         setinv <- function(inverse) inv <<- inverse
         getinv <- function() inv
