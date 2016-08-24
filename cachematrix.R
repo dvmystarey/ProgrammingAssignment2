@@ -15,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
                 stop("This is not a square matix. Input must be a square matrix. This message is approved by Dhairya Mistry :)")
         }
         return()
-        #stop square matrix check
+        #stop square matrix check. Above check section is not part of assignment. It is something extra I did for fun!
         get <- function() x
         setinv <- function(inverse) inv <<- inverse
         getinv <- function() inv
